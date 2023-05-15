@@ -3,8 +3,8 @@
 import aws_cdk as cdk
 import json
 
-from cdk_workshop.pipeline_stack import WorkshopPipelineStack
-from cdk_workshop.cdk_workshop_stack import CdkWorkshopStack
+#from cdk_workshop.pipeline_stack import WorkshopPipelineStack
+#from cdk_workshop.cdk_workshop_stack import CdkWorkshopStack
 from cdk_workshop.redshift import RedshiftStack
 
 
