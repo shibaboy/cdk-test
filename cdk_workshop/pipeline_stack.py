@@ -4,13 +4,12 @@ from aws_cdk import (
     aws_codecommit as codecommit,
 )
 
-class WorkshopPipelineStack(Stack):
 
-    def __init__(self, scope:Construct, id: str, **kwargs) -> None:
+class WorkshopPipelineStack(Stack):
+    def __init__(self, scope: Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
-        ## create codecommit repo. 
+        ## create codecommit repo.
         repo = codecommit.Repository(
-            self, 'WorkshopRepo',
-            repository_name= 'WorkshopRepo'
+            self, "WorkshopRepo", repository_name="WorkshopRepo"
         )
